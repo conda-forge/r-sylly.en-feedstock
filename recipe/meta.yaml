@@ -37,14 +37,15 @@ test:
 
 about:
   home: http://reaktanz.de/?c=hacking&s=koRpus
-  license: GPL (>= 3)
+  license: GPL-3.0-or-later
   summary: Adds support for the English language to the 'sylly' package. Due to some restrictions
     on CRAN, the full package sources are only available from the project homepage.
     To ask for help, report bugs, suggest feature improvements, or discuss the global
     development of the package, please consider subscribing to the koRpus-dev mailing
     list (<http://korpusml.reaktanz.de>).
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
