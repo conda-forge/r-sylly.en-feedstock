@@ -3,7 +3,7 @@ About r-sylly.en
 
 Home: http://reaktanz.de/?c=hacking&s=koRpus
 
-Package license: GPL (>= 3)
+Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sylly.en-feedstock/blob/master/LICENSE.txt)
 
