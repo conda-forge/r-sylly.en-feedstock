@@ -1,11 +1,11 @@
-About r-sylly.en
-================
+About r-sylly.en-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sylly.en-feedstock/blob/main/LICENSE.txt)
 
 Home: http://reaktanz.de/?c=hacking&s=koRpus
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sylly.en-feedstock/blob/main/LICENSE.txt)
 
 Summary: Adds support for the English language to the 'sylly' package. Due to some restrictions on CRAN, the full package sources are only available from the project homepage. To ask for help, report bugs, suggest feature improvements, or discuss the global development of the package, please consider subscribing to the koRpus-dev mailing list (<http://korpusml.reaktanz.de>).
 
