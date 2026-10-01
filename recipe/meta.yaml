@@ -23,10 +23,14 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-sylly
+    - r-sylly >=0.1_7
+    - r-data.table
+    - r-matrix >=1.3_0
   run:
     - r-base
-    - r-sylly
+    - r-sylly >=0.1_7
+    - r-data.table
+    - r-matrix >=1.3_0
 
 test:
   commands:
