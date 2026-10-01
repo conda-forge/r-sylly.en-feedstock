@@ -1,18 +1,18 @@
-{% set version = '0.1-3' %}
+{% set version = "0.1-4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-sylly.en
-  version: {{ version|replace("-", "_") }}
+  version: '{{ version|replace("-", "_") }}'
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/sylly.en_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sylly.en/sylly.en_{{ version }}.tar.gz
-  sha256: 23d166feda7177f6204c607da7122d5bbdcf53bc6c5f36f5d95b9c602346844b
+  sha256: ab68a9b25a2fb5c1fcc9e2e7df932a6ac2a2f17173b85dc93e4865bb80f7d422
 
 build:
-  number: 5
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -23,10 +23,14 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-sylly
+    - r-sylly >=0.1_7
+    - r-data.table
+    - r-matrix >=1.3_0
   run:
     - r-base
-    - r-sylly
+    - r-sylly >=0.1_7
+    - r-data.table
+    - r-matrix >=1.3_0
 
 test:
   commands:
@@ -36,11 +40,8 @@ test:
 about:
   home: http://reaktanz.de/?c=hacking&s=koRpus
   license: GPL-3.0-or-later
-  summary: Adds support for the English language to the 'sylly' package. Due to some restrictions
-    on CRAN, the full package sources are only available from the project homepage.
-    To ask for help, report bugs, suggest feature improvements, or discuss the global
-    development of the package, please consider subscribing to the koRpus-dev mailing
-    list (<http://korpusml.reaktanz.de>).
+  summary: Adds support for the English language to the 'sylly' package. Due to some restrictions on CRAN, the full package sources are only available from the project homepage. To ask for help, report bugs, suggest feature improvements, or discuss the global development of the package, please consider subscribing to 
+    the koRpus-dev mailing list (<http://korpusml.reaktanz.de>).
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
